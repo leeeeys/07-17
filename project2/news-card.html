@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<style >
+.news {
+    display: inline-block;
+    width: 90%;
+    max-width: 20rem;
+    margin: 1rem;
+    overflow: hidden;
+    box-shadow: 0 0 3rem -1rem rgba(0,0,0,0.5);
+}
+.news-top {
+    display: block;
+    min-height: 20rem; 
+    background: center center no-repeat;
+    background-size: cover;
+   
+}
+.news-bottom{
+    height: 140px;
+    font-weight: bolder;
+    padding: 1rem;
+}
+.btn {
+  color: #4b4b4b;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(7, 7, 7, 0.2);
+  background: transparent;
+}
+
+.btn:hover {
+  background-color: rgba(36, 36, 36, 0.1);
+}
+.news-title {
+  color: #4b4b4b;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+.news-text {
+  color: #4b4b4b;
+  font-size: 0.875rem;
+  line-height: 1.5;    
+  font-weight: 400;
+}
+</style>
+</head>
+<body>
+    <div class="your-class">
+        <div>your content</div>
+        <div>your content</div>
+        <div>your content</div>
+      </div>
+<div class="news">
+    <div class="news-top"></div>
+    <div class="news-bottom">
+        <h2 class="news-title">Card Grid Layout</h2>
+        <p class="news-text">Demo of pixel perfect pure CSS simple responsive news grid layout</p>
+        <button class="btn card_btn">Read More</button>
+    </div>
+</div>
+<div class="news">
+    <div class="news-top"></div>
+    <div class="news-bottom">
+        <h2 class="news-title">Card Grid Layout</h2>
+        <p class="news-text">Demo of pixel perfect pure CSS simple responsive news grid layout</p>
+        <button class="btn card_btn">Read More</button>
+    </div>
+</div>
+<div class="news">
+    <div class="news-top"></div>
+    <div class="news-bottom">
+        <h2 class="news-title">Card Grid Layout</h2>
+        <p class="news-text">Demo of pixel perfect pure CSS simple responsive news grid layout</p>
+        <button class="btn card_btn">Read More</button>
+    </div>
+</div>
+<div class="news">
+    <div class="news-top"></div>
+    <div class="news-bottom">
+        <h2 class="news-title">Card Grid Layout</h2>
+        <p class="news-text">Demo of pixel perfect pure CSS simple responsive news grid layout</p>
+        <button class="btn card_btn">Read More</button>
+    </div>
+</div>
+<script>
+$('your-class').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 3
+});
+</script>
+</body>
+</html>
